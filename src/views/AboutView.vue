@@ -9,7 +9,7 @@
 </template>
 <script setup lang="ts">
 const msg = 'Hello Vite + Vue 3 + TypeScript + VitePress!'
-const testddd
+const ttt
 const foo = () => {
   console.log('foo')
   let a = 1
