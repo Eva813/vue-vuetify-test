@@ -11,14 +11,7 @@
   </div>
 </template>
 <script setup lang="ts">
-const msg = 'Hello Vite + Vue 3 + TypeScript + VitePress!'
-const eee
-const foo = () => {
-  console.log('foo')
-  let a = 1
-
-  return 'foo'
-}
+// const msg = 'Hello Vite + Vue 3 + TypeScript + VitePress!'
 </script>
 <style>
 @media (min-width: 1024px) {
