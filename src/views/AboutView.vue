@@ -1,6 +1,8 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>This is an about page
+      qwe
+    </h1>
     <v-date-input label="Select a date" prepend-icon="" prepend-inner-icon="$calendar" variant="solo"></v-date-input>
     <div>dwedwed</div>
   </div>
@@ -9,7 +11,7 @@
 const msg = 'Hello Vite + Vue 3 + TypeScript + VitePress!'
 const foo = () => {
   console.log('foo')
-
+  let a = 1
 
 
   return 'foo'
@@ -22,5 +24,10 @@ const foo = () => {
     display: flex;
     align-items: center;
   }
+}
+
+.about {
+  text-align: center;
+  padding: 20px;
 }
 </style>

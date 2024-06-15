@@ -13,8 +13,7 @@
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
-    "prepare": "husky",
-    "lint-staged": "linter --arg1 --arg2"
+    "prepare": "husky"
   },
   "dependencies": {
     "pinia": "^2.1.7",
