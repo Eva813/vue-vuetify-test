@@ -23,6 +23,7 @@
     "vuetify": "^3.6.8"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
     "@playwright/test": "^1.43.0",
     "@rushstack/eslint-patch": "^1.8.0",
     "@tsconfig/node20": "^20.1.4",
