@@ -1,0 +1,35 @@
+{
+  "path": "cz-conventional-changelog",
+  "types": {
+    "feat": {
+      "description": "🌟 A new feature"
+    },
+    "fix": {
+      "description": "🐛 A bug fix"
+    },
+    "style": {
+      "description": "🎨 Changes that do not affect the meaning of the code"
+    },
+    "test": {
+      "description": "🧪 Adds or updates tests for the code"
+    },
+    "refactor": {
+      "description": "🔨  Improves code structure without altering functionality (e.g., renaming variables, function names, file names...)"
+    },
+    "chore": {
+      "description": "🗂️ Miscellaneous tasks, routine tasks and maintenance (e.g., updating dependencies, configuration changes)"
+    },
+    "perf": {
+      "description": "🚀 A code change that improves performance"
+    },
+    "ci": {
+      "description": "👷 Changes to our CI configuration files and scripts"
+    },
+    "build": {
+      "description": "🏗️ Changes that affect the build system or external dependencies(e.g., modifying build scripts)"
+    },
+    "docs": {
+      "description": "📚 Documentation only changes (e.g., README updates)"
+    }
+  }
+}

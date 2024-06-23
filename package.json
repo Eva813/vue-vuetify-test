@@ -12,7 +12,8 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "format": "prettier --write src/",
+    "prepare": "husky"
   },
   "dependencies": {
     "pinia": "^2.1.7",
@@ -22,6 +23,7 @@
     "vuetify": "^3.6.8"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.3.0",
     "@playwright/test": "^1.43.0",
     "@rushstack/eslint-patch": "^1.8.0",
     "@tsconfig/node20": "^20.1.4",
@@ -32,10 +34,14 @@
     "@vue/eslint-config-typescript": "^13.0.0",
     "@vue/test-utils": "^2.4.5",
     "@vue/tsconfig": "^0.5.1",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.0",
     "eslint-plugin-playwright": "^1.5.4",
     "eslint-plugin-vue": "^9.23.0",
+    "husky": "^9.0.11",
     "jsdom": "^24.0.0",
+    "lint-staged": "^15.2.7",
     "npm-run-all2": "^6.1.2",
     "prettier": "^3.2.5",
     "typescript": "~5.4.0",
@@ -43,5 +49,16 @@
     "vite-plugin-vue-devtools": "^7.0.25",
     "vitest": "^1.4.0",
     "vue-tsc": "^2.0.11"
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "eslint --fix"
+    ],
+    "src/**/*.{vue,js,jsx,ts,tsx,css,scss,md}": "prettier --write --ignore-unknown"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
